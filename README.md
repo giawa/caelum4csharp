@@ -25,6 +25,6 @@ The project includes a .sln and 2 .csproj files which will create an OpenGL prog
 ![Screenshot 6](https://giawa.github.com/caelum/screenshot6.png)
 
 ## TODO
-Current the stars move based on a static rotation unaffected by latitude/longitude.
-
-Make it a bit easier to deal with ICameraBound stuff.
+1. Currently the stars move based on a static rotation unaffected by latitude/longitude.
+2. Make it a bit easier to deal with ICameraBound stuff.
+3. Documentation!
