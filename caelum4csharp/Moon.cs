@@ -31,8 +31,6 @@ namespace caelum4csharp
         /// The phase of the moon (a value from 0 to 4 is permissable).
         /// </summary>
         public float Phase { get; set; }
-
-        public Matrix4 ModelMatrix { get { return modelMatrix; } }
         #endregion
 
         #region Constructor

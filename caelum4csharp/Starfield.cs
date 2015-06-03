@@ -33,6 +33,11 @@ namespace caelum4csharp
         #endregion
 
         #region Properties
+        /// <summary>
+        /// Sets the scale of the starfield, which is the radius or distance from the camera
+        /// to the stars.  Note:  The stars are all equidistance from the camera,
+        /// but we fake out distance with brightness/size.
+        /// </summary>
         public float Scale { get; set; }
         #endregion
 

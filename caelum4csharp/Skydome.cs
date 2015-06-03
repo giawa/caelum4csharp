@@ -16,6 +16,9 @@ namespace caelum4csharp
         #endregion
 
         #region Properties
+        /// <summary>
+        /// Sets the radius of the skydome.
+        /// </summary>
         public float Scale { get; set; }
         #endregion
 
@@ -121,7 +124,7 @@ namespace caelum4csharp
         public void UpdatePosition(Vector3 position)
         {
             // update the position of the skydome
-            modelMatrix = Utilities.FastMatrix4(new Vector3(position.x, position.y, position.z), Vector3.UnitScale * Scale).ToFloat();
+            modelMatrix = Utilities.FastMatrix4(position, Vector3.UnitScale * Scale).ToFloat();
 
             Shaders.SkydomeShader.Use();
             Shaders.SkydomeShader["model_matrix"].SetValue(modelMatrix);

@@ -31,8 +31,6 @@ namespace caelum4csharp
         /// The body color of the sun.
         /// </summary>
         public Vector3 Color { get; set; }
-
-        public Matrix4 ModelMatrix { get { return modelMatrix; } }
         #endregion
 
         #region Constructor
